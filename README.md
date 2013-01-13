@@ -9,6 +9,7 @@ This application uses the following technologies:
 - [Underscore.js](http://underscorejs.org/)
 - [jQuery](http://jquery.com/)
 - [PHP](http://php.net/)
+- [MySQL](https://www.mysql.com/)
 - [Slim](http://www.slimframework.com/)
 - [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
 
