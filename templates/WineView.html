@@ -1,0 +1,76 @@
+<div class="row">
+    <form class="form-horizontal span12">
+        <fieldset>
+            <legend>Wine Details</legend>
+            <br/>
+            <div class="row">
+                <div class="span9">
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" placeholder="Name" id="name" name="name" value="<%= name %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" placeholder="Grapes" id="grapes" name="grapes" value="<%= grapes %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" placeholder="Country" id="country" name="country" value="<%= country %>"/>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" placeholder="State/Province" id="region" name="region" value="<%= region %>"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <select class="span1" placeholder="Year" id="year" name="year" value="<%= year %>">
+                                <option
+                                <%= year == 2012?'selected':'' %>>2012</option>
+                                <option
+                                <%= year == 2011?'selected':'' %>>2011</option>
+                                <option
+                                <%= year == 2010?'selected':'' %>>2010</option>
+                                <option
+                                <%= year == 2009?'selected':'' %>>2009</option>
+                                <option
+                                <%= year == 2008?'selected':'' %>>2008</option>
+                                <option
+                                <%= year == 2007?'selected':'' %>>2007</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <textarea id="description" placeholder="Notes" name="description" class="span6" rows="6"><%= description
+                            %></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="well">
+                        <img id="picture" width="180" src="<%= picture === null ? 'uploads/generic.jpg' : 'uploads/' + picture %>"/>
+                        <input class="image-upload" type="file" />
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-actions">
+            <a href="#" class="btn btn-primary save">Save</a>
+            <a href="#" class="btn <%= canDelete ? 'delete' : 'cancel' %>"><%= secondaryLabel %></a>
+        </div>
+    </form>
+</div>
+<div class="row status-bar">
+    <div class="span12">
+        <div class="alert alert-success" style="display: none">
+            <b>Success!</b> Wine saved successfully
+        </div>
+    </div>
+</div>

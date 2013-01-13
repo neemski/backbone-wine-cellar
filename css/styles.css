@@ -1,0 +1,20 @@
+body {
+    padding: 0;
+}
+
+.header {
+    height: 40px;
+}
+
+a.plain:link
+{ color: #333; text-decoration: none }
+a.plain:active
+{ color: #333; text-decoration: none }
+a.plain:visited
+{ color: #333; text-decoration: none }
+a.plain:hover
+{ color: #333; text-decoration: none }
+
+.status-bar {
+    height: 60px;
+}
